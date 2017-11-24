@@ -1,6 +1,8 @@
 Sites:
 [Hackerrank](https://www.hackerrank.com/)
+
 [Code Wars](https://www.codewars.com/)
+
 [Project Euler](https://projecteuler.net/archives)
 
 Random ones found to do:
