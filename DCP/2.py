@@ -6,7 +6,7 @@ def products(nums):
         prefix_products.append(prefix_products[-1] * num)
       else:
         prefix_products.append(num)
-
+    
     # Generate suffix products
     suffix_products = []
     for num in reversed(nums):
@@ -14,6 +14,7 @@ def products(nums):
         suffix_products.append(suffix_products[-1] * num)
       else:
         suffix_products.append(num)
+
     suffix_products = list(reversed(suffix_products))
 
     # Generate result
@@ -25,4 +26,7 @@ def products(nums):
         result.append(prefix_products[i - 1])
       else:
         result.append(prefix_products[i - 1] * suffix_products[i + 1])
+
     return result
+
+print(products([1,2,3,4,5]))
