@@ -16,6 +16,7 @@ rotateImage(a) =
 */
 
 function rotateImage(a) {
+    debugger;
     let n = a.length;
     for (var layer = 0; layer < n/2; layer++) {
 
@@ -25,24 +26,29 @@ function rotateImage(a) {
         for (var i = first; i < last; i++) {
             var offset = i - first;
 
-            // save top
-            var top = a[first][i];
+            // save top left temporarily
+            var temp = a[first][i];
 
-            // left -> top
+            // BL (bottom left) -> TL (top left)
+            var TL = a[first][i];
             a[first][i] = a[last-offset][first]
-            var left = a[first][i];
+            TL = a[first][i];
 
-            // bottom -> left
+            // BR (bottom right) -> BL (bottom left)
+            var BR = a[last-offset][first];
             a[last-offset][first] = a[last][last-offset]
-            var bottom = a[last-offset][first];
+            BR = a[last-offset][first];
 
-            // right -> bottom
+            // TR (top right) -> BR (bottom right)
+            var TR = a[last][last-offset]
             a[last][last-offset] = a[i][last]
-            var right = a[last][last-offset]
+            TR = a[last][last-offset]
 
-            // top -> right
-            a[i][last] = top;
-            var topEnd = a[i][last]
+            // TL (top left) -> TR (top right)
+            var TL = a[i][last]
+            a[i][last] = temp;
+            TL = a[i][last]
+
         }
 
     }
