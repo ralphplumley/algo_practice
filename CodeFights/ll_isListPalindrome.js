@@ -62,7 +62,7 @@ function reverseLinkedList(l) {
     return previous;
 }
 
-// let l = [0,1,5,3,2,1,0];
+// [0,1,5,3,2,1,0];
 let l = new ListNode(0);
 let l1 = new ListNode(3);
 let l2 = new ListNode(5);
