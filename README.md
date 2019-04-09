@@ -6,7 +6,8 @@ Sites:
 
 [Project Euler](https://projecteuler.net/archives)
 
-Random ones found to do:
-- Smallest number divisible by each of the numbers 1 to 20
-- Find the difference between the sum of the squares and the square of the sums
-- Find the 10001st prime
+Books: 
+
+[Elements of Programming Interviews](https://elementsofprogramminginterviews.com/)
+[EPI Judge](judge.elementsofprogramminginterviews.com/)
+[EPI Solutions](solutions.elementsofprogramminginterviews.com/)
