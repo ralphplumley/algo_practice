@@ -10,7 +10,6 @@
 //  * @return {boolean}
 //  */
 var isPalindrome = function(node) {
-    // debugger
     if (node === null || node.next === null) {
         return true
     }
@@ -41,15 +40,7 @@ var isPalindrome = function(node) {
         half = half.next
     }
     
-    // console.log('left: ', left)
-    // console.log('half: ', half)
-    
-    
     while (left !== null) {
-        console.log('------------')
-        console.log('left: ', left)
-        console.log('half: ', half)
-        
         if (half === null || left.val !== half.val ) {
             return false
         }
