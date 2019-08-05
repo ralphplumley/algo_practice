@@ -1,0 +1,25 @@
+{
+  "name": "algo_practice",
+  "version": "1.0.0",
+  "description": "Sites:\r [Hackerrank](https://www.hackerrank.com/)\r [Code Wars](https://www.codewars.com/users/ralphplumley)\r [Project Euler](https://projecteuler.net/archives)",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm test",
+    "test": "jest",
+    "watch-test": "npm test -- --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralphplumley/algo_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralphplumley/algo_practice/issues"
+  },
+  "homepage": "https://github.com/ralphplumley/algo_practice#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
